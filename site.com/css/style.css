@@ -355,29 +355,65 @@ html, body {
 
 /* Страница products */
 
+.cardWrapper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	float: left;
+}
+
+
 .card { 
-	margin: 0px 10px 20px 10px; /* Отступ карточек друг от друга 10 - тки суммируются по бокам, а 20 отступ с низу при переходе карточки*/
-	padding: 10px; /* отступ картинки по бокам в диве*/
-	box-shadow: 0 7px 20px rgba(0, 0, 0, .25);
-	max-width: 180px; /* Максимальный размер div блока карточки*/
-	max-height: 360px;
-	text-align: center; /*Выравнивает все шрифты в диве по центру*/
-
+	margin: 0px 10px 40px 10px;
+	border: 1px solid;
+	width: 200px;
+	height: 350px;
 
 }
-.card img {
-	/*border: 1px solid black;*/ /* Обводка блока картинки*/
-}
-.card p {
-	padding: 10px; /*Отступ текста от дива на 10 пикселей*/
-	font-size: 10px; /*Размер текста*/
-	overflow: hidden; /* Скрывает текст и картинки если выходит за границы */
+
+.cardImg {
+	margin-top: 15px;
+	text-align: center;
 }
 
-.card a {  
-	text-transform: uppercase; /*Текст большими буквами*/
-	color: black; /*Черный цвет текста*/ 
+.cardText {
+	width: 200px;
+	position: absolute;
+	text-align: center;
+	margin-top: 5px;
+	overflow: hidden;
+	font-size: 15px;
+	padding: 10px;
 }
+
+.cardUrl {
+	text-align: center;
+	margin-top: 110px;
+}
+
+.glow-button {
+	display: inline-block;
+	padding: 3px;
+	width: 200px;
+	height: 30px;
+	border-radius: 0px;
+	box-shadow: 0 0 40px 40px #F137A6 inset, 0 0 0 0 #F137A6;
+	transition: .15s ease-in-out;
+}
+.glow-button:hover {
+	box-shadow: 0 0 10px 0 #F137A6 inset, 0 0 10px 4px #F137A6;
+	color: #F137A6;
+}
+.glow-button strong {
+	font-size: 17px;
+}
+
+.cardUrl a{
+	color: black;
+	font-size: 20px;
+	text-decoration: none;
+}
+
 /* /Страница products */
 
 
