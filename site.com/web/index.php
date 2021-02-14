@@ -16,7 +16,7 @@
 mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT); // Сообщает о том какая именно ошибка произошла
 $count = 30;// Количест во записей на странице
 $page = $_GET["page"];// Узнаём номер страницы
-$mysqli = new mysqli("localhost", "world_sissy", "world_sissy", "world_sissy");// Подключаемся к базе данных
+$mysqli = new mysqli("localhost", "root", "world_sissy", "world_sissy");// Подключаемся к базе данных
 $category = 'all';
 $page = (isset($_GET['page']) && $_GET['page'] > 0) ? round($_GET['page']) : 1;
 $shift = $count * ($page - 1);// Смещение в LIMIT. Те записи, порядковый номер которого больше этого числа, будут выводиться.
@@ -48,7 +48,7 @@ while ($row = $result_set->fetch_assoc()) {
   <a href=" '.$directory.'/'.$row['video_name'].'" title="'.$row['title'].'"><strong>'.$row['title'].'</strong></a>
   </span>
   <a href="'.$directory.'/'.$row['video_name'].'">
-  <video width="180" src="'.$directory.'/'.$row['video_name'].'">'.$row['title'].'</video></a>   
+  <video width="180" height="118" src="'.$directory.'/'.$row['video_name'].'">'.$row['title'].'</video></a>   
   </div>';
   $i++; 
   }

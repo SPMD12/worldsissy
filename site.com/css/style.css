@@ -93,7 +93,6 @@ html, body {
 	flex-wrap: wrap;
 	justify-content: center;
 	display: flex;
-	flex: 1 0 auto;
 }
 /* /Страница index*/
 
@@ -674,32 +673,36 @@ html, body {
 .imgSize strong {
 	display: block;
 	position: absolute;
-
+	color: black;
+	text-transform: uppercase;
+	font-size: 11px;
 }
 
 
 /* /Страница categories */
 .videoStyle {
-	margin-bottom: 30px; 
-	padding: -210px;
-	margin-left: 10px;
+	display: inline-block;
+	border: 1px solid black;
+	background-color: black;
+	height: 120px;
+	margin: 0px 10px 40px 10px;
+	z-index: 1;
 }
 
-.videoName {
+
+.videoName a {
 	z-index: 1;
 	width: 180px; /*Что бы название не вылезало за края*/
 	position: absolute;
-	margin-top: 105px;
+	margin-top: 125px;
 	font-size: 12px;
 	overflow: hidden;
 	text-overflow: ellipsis;
-}
-
-.videoName a {
 	color: black;
 	white-space: pre;
 	text-decoration: none;
 }
+
 /* Выводит надпись в категориях Данный раздел в разработке
 */
 
