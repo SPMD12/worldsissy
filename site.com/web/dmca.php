@@ -1,4 +1,4 @@
-<?php include ('../templates/header.html.twig');?>
+<?php include ('../templates/header.html');?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,6 +9,6 @@
     <div class="content">
 	</div>
 </div>
-<?php include ('../templates/footer.html.twig');?>
+<?php include ('../templates/footer.html');?>
 </body>
 </html>

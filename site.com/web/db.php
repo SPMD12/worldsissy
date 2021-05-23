@@ -1,3 +1,3 @@
 <?php require "../libs/rb.php";
-R::setup( 'mysql:host=localhost;dbname=world_sissy', 'world_sissy', 'world_sissy' );
+R::setup( 'mysql:host=localhost;dbname=worldsis_best', 'worldsis', 'lovedick1712' );
 session_start();?>

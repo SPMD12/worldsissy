@@ -53,9 +53,10 @@ position: absolute;
 
 
 .logo {
-	max-width: 130px;
-	position: absolute; /*Устанавливает способ позиционирования элемента относительно окна браузера или других объектов на веб-странице*/
-	margin-top: -7%; /*Отступ логотипа с вверху в низ*/
+	margin-top: -30px;
+	position: absolute;
+	color: #c400ff;
+	font-weight: 900;
 }
 
 
@@ -66,10 +67,10 @@ html, body {
 
 /* Создает розовый блок для меню */
 .wrapperHead header {
-	margin-top: 2%;/*Отступ background с вверху в низ*/
-	padding: 0.3%; /*Вертикальный размер шапки*/
+	margin-top: 30px;/*Отступ background с вверху в низ*/
 	width: 100%; /*Ширина блока меню на 100 процентов не зависимо от размера.*/
 	background: pink; /*Цвет объекта*/
+
 }
 /* /Создает розовый блок для меню */
 
@@ -85,7 +86,7 @@ html, body {
 	flex-wrap: wrap;
 	justify-content: center;
 	display: flex;
-	flex: 1 0 auto;
+	/*flex: 1 0 auto;*/ /*В моб версии слишком большой отступ из за этого*/
 }
 /*Страница index*/
 .contentVideo {
@@ -108,151 +109,19 @@ html, body {
 	visibility: hidden;
 }
 
-@media (max-width: 768px){
-
-
-	
-}
-
-
-
-
-
-
-
-
-@media (max-width: 669px) {
-
-	/*.hamburger-menu {
-		z-index: 2;
-		position: absolute;
-		display: block;
-		visibility: visible;
-	}*/
-	.register a {
-		display: none;
-		visibility: hidden;
-	}
-
-	.authorized a{
-		display: none;
-		visibility: hidden;
-	}
-
-	.authorized {
-		display: none;
-		visibility: hidden;
-	}
-
-	/* скрываем чекбокс */
-	#menu__toggle {
-		opacity: 0;
-	}
-	/* стилизуем кнопку */
-	.menu__btn {
-		display: flex; /* используем flex для центрирования содержимого */
-		position: fixed;
-		top: 15px;
-		left: 5px;
-		width: 26px;
-		height: 16px;
-		cursor: pointer;
-		z-index: 1;
-	}
-	/* добавляем "гамбургер" */
-	.menu__btn > span,
-	.menu__btn > span::before,
-	.menu__btn > span::after {
-		display: block;
-		position: absolute;
-		width: 100%;
-		height: 2px;
-		background-color: #616161;
-	}
-	.menu__btn > span::before {
-		content: '';
-		top: -8px;
-	}
-	.menu__btn > span::after {
-		content: '';
-		top: 8px;
-	}
-	/* контейнер меню */
-	.menu__box {
-		display: block;
-		position: fixed;
-		visibility: hidden;
-		top: 0;
-		left: -100%;
-		width: 150px;
-		height: 100%;
-		margin: 0px;
-		padding: 50px 0;
-		list-style: none;
-		background-color: pink;
-		box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
-	}
-	/* элементы меню */
-	.menu__item {
-		display: block;
-		padding: 2px 4px;
-		color: #333;
-		font-size: 12px;
-		font-weight: 600;
-		text-transform: uppercase;
-		text-decoration: none;
-	}
-	.menu__item:hover {
-		background-color: #CFD8DC;
-	}
-	#menu__toggle:checked ~ .menu__btn > span {
-		transform: rotate(45deg);
-	}
-	#menu__toggle:checked ~ .menu__btn > span::before {
-		top: 0;
-		transform: rotate(0);
-	}
-	#menu__toggle:checked ~ .menu__btn > span::after {
-		top: 0;
-		transform: rotate(90deg);
-	}
-	#menu__toggle:checked ~ .menu__box {
-		visibility: visible;
-		left: 0;
-	}
-}
-
-
-@media (max-width: 404px){
-	.menu li{
-		margin: 0px -7px 0px -7px; 
-	}
-	.autorization{
-		position: absolute;
-		display: none;
-		visibility: hidden;
-	}
-	.pagination a {
-		font-size: 10px;
-	}
-	.wrapperHead header {
-	margin-top: 0%;/*Отступ background с вверху в низ*/
-	padding: 1%; /*Вертикальный размер шапки*/
-	width: 100%; /*Ширина блока меню на 100 процентов не зависимо от размера.*/
-}
-}
-
 
 /* Меню */
 .menu {
 	display: flex; /*Делает текст меню горизонтальным*/
 	list-style: none; /*Убирает нумирацию*/
 	justify-content: center;/*Выравнивание по центру*/
+	padding: 5px;
 }
 
 .menu li{
 	padding: 0px 20px 0px 20px; /*Отступы текста друг от друга в меню*/
 }
+
 .menu li a {
 	font-size: 13px; /*Размер текста*/
 	text-transform: uppercase; /*Делает буквы большими*/
@@ -261,14 +130,15 @@ html, body {
 	-moz-transition: all 0.3s 0.01s ease; /*делаем плавный переход*/
 	-o-transition: all 0.3s 0.01s ease;
 	-webkit-transition: all 0.3s 0.01s ease;
+	padding: 6px;
 }
 
 /*:hover - Определяет стиль элемента при наведении на него курсора мыши, 
 но при этом элемент еще не активирован, иными словами кнопка мыши 
 не нажата.*/
 .menu li a:hover {
-	background: gray;
-	padding: 5px;
+	background: #b3adad;
+	box-shadow: 0 0 0px 0px #b3adad inset, 0 0 0px 0px #b3adad;
 }
 /* /Меню */
 
@@ -298,14 +168,16 @@ html, body {
 
 
 .register li a {
+	color: black;
 	margin: 7px;
+	padding: 6px;
 	text-decoration: none; /*Убирает подчеркивание ссылки*/
 }
 
 /*:hover - Определяет стиль элемента при наведении на него курсора мыши*/
 .register li a:hover {
-	background: grey; /*Цвет курсора при наведении серый*/
-	padding: 5px; /*Объем серого шрифта*/
+	background: #b3adad;
+	box-shadow: 0 0 0px 0 #b3adad inset, 0 0 0px 0px #b3adad;
 	-moz-transition: all 0.3s 0.01s ease; /*делаем плавный переход*/
 	-o-transition: all 0.3s 0.01s ease;
 	-webkit-transition: all 0.3s 0.01s ease;
@@ -323,6 +195,7 @@ html, body {
 }
 
 .authorized li a{
+	padding: 6px;
 	margin: 7px;
 	text-decoration: none; /*Убирает подчеркивание ссылки*/
 }
@@ -330,7 +203,6 @@ html, body {
 /*:hover - Определяет стиль элемента при наведении на него курсора мыши*/
 .authorized li a:hover {
 	background: grey; /* При наведении серый цвет */
-	padding: 5px; /* объем серого цвета */
 	-moz-transition: all 0.3s 0.01s ease; /*делаем плавный переход*/
 	-o-transition: all 0.3s 0.01s ease;
 	-webkit-transition: all 0.3s 0.01s ease;
@@ -364,7 +236,7 @@ html, body {
 
 .card { 
 	background-color: pink;
-	margin: 0px 10px 40px 10px;
+	margin: 0px 10px 70px 10px;
 	border: 1px solid;
 	width: 200px;
 	height: 350px;
@@ -483,6 +355,7 @@ html, body {
 
 .productsVideo {
 	margin-left: 10px;
+	flex-wrap: wrap;
 }
 
 .productsVideo h4 {
@@ -650,16 +523,17 @@ html, body {
 /* Страница categories */
 
 .catAll {
-	margin-left: 30px;
+	text-align: center;
+
 }
 
 
 
 .imgSize {
-
-	float:left;
-	max-width: 180px;
-	max-height: 120px;
+	background: pink;
+	display: inline-block;
+	width: 180px;
+	height: 120px;
 	overflow: hidden;
 	border: 1px solid black;
 	margin: 0px 5px 30px 5px;
@@ -671,6 +545,8 @@ html, body {
 }
 
 .imgSize strong {
+	width: 180px;
+	height: 17px;
 	display: block;
 	position: absolute;
 	color: black;
@@ -684,17 +560,20 @@ html, body {
 	display: inline-block;
 	border: 1px solid black;
 	background-color: black;
-	height: 120px;
+	width: 170px;
+	height: 97px;
+	overflow: hidden;
 	margin: 0px 10px 40px 10px;
 	z-index: 1;
 }
 
 
+
 .videoName a {
 	z-index: 1;
-	width: 180px; /*Что бы название не вылезало за края*/
+	width: 178px; /*Что бы название не вылезало за края*/
 	position: absolute;
-	margin-top: 125px;
+	margin-top: 100px;
 	font-size: 12px;
 	overflow: hidden;
 	text-overflow: ellipsis;
@@ -703,12 +582,6 @@ html, body {
 	text-decoration: none;
 }
 
-/* Выводит надпись в категориях Данный раздел в разработке
-*/
-
-
-/* /Выводит надпись в категориях Данный раздел в разработке
-*/
 
 .paginationWrapper {
 	text-align: center;
@@ -752,94 +625,57 @@ html, body {
 
 }
 
-
-
-
-/* /footer */
-
-
-
-/* Пригласить друзей footer */
-/*.wrapperRepost {
-  font-size: 6px;
-  margin-top: 10px;
-}
-
-
-.wrapperRepost ul {
-  list-style: none;
-}
-
-
-.wrapperRepost ul li {
-  width: 25px;
-  height: 25px;
-  line-height: 25px;
-  margin: 0 7px;
-  text-align: center;
-  cursor: pointer;
-  border-radius: 50%;
-  border: 2px solid black;
-  float: left;
-  transition: all 0.7s ease; 
-}
-
-
-.wrapperRepost ul li .fa {
-  color: black;
-  transition: all 0.5s ease;
-}
-
-.wrapperRepost ul li:hover.facebook {
-  border: 2px solid #3b5998;
-  box-shadow: 0 0 15px #3b5998;
-  transition: all 0.5s ease;
-}
-
-.wrapperRepost ul li:hover .fa-facebook {
-  color: #3b5998;
-  text-shadow: 0 0 15px #3b5998;
-  transition: all 0.5s ease;
-}
-
-
-.wrapperRepost ul li:hover.twitter {
-  border: 2px solid #00aced;
-  box-shadow: 0 0 15px #00aced;
-  transition: all 0.5s ease;
-}
-
-.wrapperRepost ul li:hover .fa-twitter {
-  color: #00aced;
-  text-shadow: 0 0 15px #00aced;
-  transition: all 0.5s ease;
+.beta {
+	margin-top: 10px;
 }
 
 
 
-.wrapperRepost ul li:hover.vk {
-  border: 2px solid #597da3;
-  box-shadow: 0 0 15px #597da3;
-  transition: all 0.5s ease;
-}
-
-.wrapperRepost ul li:hover .fa-vk {
-  color: #597da3;
-  text-shadow: 0 0 15px #597da3;
-  transition: all 0.5s ease;
+@media (max-width: 669px) {
+	.logo{
+		visibility: hidden;
 }
 
 
-.wrapperRepost ul li:hover.telegram {
-  border: 2px solid #0088cc;
-  box-shadow: 0 0 15px #0088cc;
-  transition: all 0.5s ease;
+
+@media (max-width: 404px){
+	.videoStyle {
+	width: 297px;
+	height: 165px;
+	display: inline-block;
+	border: 1px solid black;
+	background-color: black;
+	overflow: hidden;
+	margin: 0px 10px 40px 10px;
+	z-index: 1;
+	}
+
+	.videoName a {
+	z-index: 1;
+	width: 300px; /*Что бы название не вылезало за края*/
+	position: absolute;
+	margin-top: 165px;
+	font-size: 12px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	color: black;
+	white-space: pre;
+	text-decoration: none;
+	}
+	.menu li{
+		margin: 0px -7px 0px -7px; 
+	}
+	.autorization{
+		position: absolute;
+		display: none;
+		visibility: hidden;
+	}
+	.pagination a {
+		font-size: 10px;
+	}
+	.wrapperHead header {
+	margin-top: 0%;/*Отступ background с вверху в низ*/
+	padding: 1%; /*Вертикальный размер шапки*/
+	width: 100%; /*Ширина блока меню на 100 процентов не зависимо от размера.*/
 }
-
-.wrapperRepost ul li:hover .fa-telegram {
-  color: #0088cc;
-  text-shadow: 0 0 15px #0088cc;
-  transition: all 0.5s ease;
-}*/
-
-/* /footer */
+}

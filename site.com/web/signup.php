@@ -1,12 +1,14 @@
 <?php require "./db.php";?>
-<!DOCTYPE html>
-<html>
-<head>
-	<title></title>
-</head>
-<body>
-	<div class="wrapperReg">
-<?php $data = $_POST; // возвращение данных
+  <!DOCTYPE html>
+  <html>
+
+  <head>
+    <title></title>
+  </head>
+
+  <body>
+    <div class="wrapperReg">
+      <?php $data = $_POST; // возвращение данных
  	if ( isset($data['do_signup']) ) // проверка кнопки
  	{
  		//Здесь регистрация
@@ -52,32 +54,35 @@
  		}
  	}
 ?>
-</div>
-			<!--Подключение стилей css-->
-	<link rel="stylesheet" href="../css/style.css">
-<div class="regFormWrapper">
- 	<form action="signup.php" method="POST"> <!-- Форма регистрации -->
- 		<div class="formTableReg">
- 		<p>
- 			<!-- Форма логина -->
- 			<input type="text" name="login" value="<?php echo @$data['login'];?>" placeholder="Введите логин"><br>
- 			<!-- Форма Email -->
- 			<input type="email" name="email" value="<?php echo @$data['email'];?>" placeholder="Введите е-mail"><br>
- 			<!-- Форма пароля -->
- 			<input type="password" name="password" value="<?php echo @$data['password'];?>" placeholder="Введите пароль"><br>
- 			<!-- Форма повторного пароля -->
- 			<input type="password" name="password_2" value="<?php echo @$data['password_2'];?>" placeholder="Введите пароль">
- 		</p>
+    </div>
+    <!--Подключение стилей css-->
+    <link rel="stylesheet" href="../css/style.css">
+    <div class="regFormWrapper">
+      <form action="signup.php" method="POST">
+        <!-- Форма регистрации -->
+        <div class="formTableReg">
+          <p>
+            <!-- Форма логина -->
+            <input type="text" name="login" value="<?php echo @$data['login'];?>" placeholder="Введите логин">
+            <br>
+            <!-- Форма Email -->
+            <input type="email" name="email" value="<?php echo @$data['email'];?>" placeholder="Введите е-mail">
+            <br>
+            <!-- Форма пароля -->
+            <input type="password" name="password" value="<?php echo @$data['password'];?>" placeholder="Введите пароль">
+            <br>
+            <!-- Форма повторного пароля -->
+            <input type="password" name="password_2" value="<?php echo @$data['password_2'];?>" placeholder="Введите пароль">
+          </p>
 
- 		<div class="regFormBut">
- 			<!-- Кнопка регистрации -->
- 			<button type="submit" name="do_signup"> Зарегистрироваться 
- 			</button>
- 		</div>
- 		</div>
- 	</form>
-</div>
-</body>
-</html>
+          <div class="regFormBut">
+            <!-- Кнопка регистрации -->
+            <button type="submit" name="do_signup"> Зарегистрироваться
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
 
- 	
+  </html>
