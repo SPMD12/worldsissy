@@ -1,4 +1,4 @@
-<?php require "./db.php";?>
+<?php include ('../templates/header.html');?>
   <!DOCTYPE html>
   <html>
 

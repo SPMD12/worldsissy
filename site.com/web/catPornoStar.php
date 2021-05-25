@@ -20,7 +20,7 @@ $page = $_GET["page"];// Узнаём номер страницы
 $category = 'PornoStar';
 $page = (isset($_GET['page']) && $_GET['page'] > 0) ? round($_GET['page']) : 1;
 $shift = $count * ($page - 1);// Смещение в LIMIT. Те записи, порядковый номер которого больше этого числа, будут выводиться.
-$result_set = $mysqli->query("SELECT * FROM `posts` WHERE `video_categories` = \"$category\" ORDER BY id DESC LIMIT $shift, $count");// Делаем выборку $count записей, начиная с $shift + 1.
+$result_set = R::getAll("SELECT * FROM `posts` WHERE `video_categories` = \"$category\" ORDER BY id DESC LIMIT $shift, $count");// Делаем выборку $count записей, начиная с $shift + 1.
 
 
 
@@ -34,7 +34,7 @@ $title = implode('.',$file_parts);
 $title = htmlspecialchars($title);  
 
 
-while ($row = $result_set->fetch_assoc()) {
+foreach ($result_set as $row) {
   echo 
   '<div class="videoStyle">
   <span class="videoName">    

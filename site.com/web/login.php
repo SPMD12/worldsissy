@@ -1,4 +1,4 @@
-<?php require "./db.php";?>
+<?php include ('../templates/header.html');?>
   <!DOCTYPE html>
   <html>
 
@@ -18,7 +18,7 @@
  			if (password_verify($data['password_log'], $user -> password)) // вроде бы проверка пароля
  			{
  				$_SESSION['logged_user'] = $user; // авторизация пользователя вроде бы.
- 				echo '<div style = "color: green;">Вы авторизованны! На <a href ="./
+ 				echo '<div style = "color: green;">Вы авторизованны! На <a href ="http://www.worldsissy.com/
  				">главную страницу</a></div><hr>';
  			} 
  			else
