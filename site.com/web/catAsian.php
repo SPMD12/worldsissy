@@ -15,7 +15,7 @@
         <?php
 
 mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT); // Сообщает о том какая именно ошибка произошла
-$count = 20;// Количест во записей на странице
+$count = 25;// Количест во записей на странице
 $page = $_GET["page"];// Узнаём номер страницы
 $category = 'AsianPorn';
 $page = (isset($_GET['page']) && $_GET['page'] > 0) ? round($_GET['page']) : 1;
@@ -54,7 +54,7 @@ foreach ($result_set as $row) {
   /* Входные параметры */
   $count_pages = 2;
   $active = $page; 
-  $count_show_pages = 5;
+  $count_show_pages = 2;
   $url = "/web/catAsian.php";
   $url_page = "/web/catAsian.php?page=";
   if ($count_pages > 1) { // Всё это только если количество страниц больше 1
@@ -73,7 +73,7 @@ foreach ($result_set as $row) {
       <!-- Дальше идёт вывод Pagination -->
       <div class="paginationWrapper">
         <div class="pagination">
-          <!-- <span>Страницы: </span> -->
+          <!-- <span> Страницы: </span> -->
           <?php if ($active != 1) { ?>
             <!-- <a href="<?=$url?>" title="Первая страница">&lt;&lt;&lt;</a> -->
             <a href="<?php if ($active == 2) { ?><?=$url?><?php } else { ?><?=$url_page.($active - 1)?><?php } ?>" title="Предыдущая страница">&lt;</a>

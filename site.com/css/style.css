@@ -5,53 +5,6 @@ padding: 0;
 }
 
 
-@font-face {
-	font-family: "RobotoRegular";
-	src: url("/fonts/Roboto/RobotoRegular/RobotoRegular.eot");
-	src: url("/fonts/Roboto/RobotoRegular/RobotoRegular.eot?#iefix") format("embedded-opentype"),
-			 url("/fonts/Roboto/RobotoRegular/RobotoRegular.woff") format("woff"),
-			 url("/fonts/Roboto/RobotoRegular/RobotoRegular.ttf") format("truetype");
-	font-style: normal;
-	font-weight: normal;
-}
-
-@font-face {
-	font-family: "RobotoBold";
-	src: url("/fonts/Roboto/RobotoBold/RobotoBold.eot");
-	src: url("/fonts/Roboto/RobotoBold/RobotoBold.eot?#iefix") format("embedded-opentype"),
-			 url("/fonts/Roboto/RobotoBold/RobotoBold.woff") format("woff"),
-			 url("/fonts/Roboto/RobotoBold/RobotoBold.ttf") format("truetype");
-	font-style: normal;
-	font-weight: normal;
-}
-
-@font-face {
-	font-family: "RobotoLight";
-	src: url("/fonts/Roboto/RobotoLight/RobotoLight.eot");
-	src: url("/fonts/Roboto/RobotoLight/RobotoLight.eot?#iefix") format("embedded-opentype"),
-			 url("/fonts/Roboto/RobotoLight/RobotoLight.woff") format("woff"),
-			 url("/fonts/Roboto/RobotoLight/RobotoLight.ttf") format("truetype");
-	font-style: normal;
-	font-weight: normal;
-}
-
-@font-face {
-	font-family: "RobotoRegular";
-	src: url("/fonts/Roboto/RobotoMedium/RobotoMedium.eot");
-	src: url("/fonts/Roboto/RobotoMedium/RobotoMedium.eot?#iefix") format("embedded-opentype"),
-			 url("/fonts/Roboto/RobotoMedium/RobotoMedium.woff") format("woff"),
-			 url("/fonts/Roboto/RobotoMedium/RobotoMedium.ttf") format("truetype");
-	font-style: normal;
-	font-weight: normal;
-}
-
-/*Блок поиска*/
-/*.search-box {
-margin: -50px 20%; 
-position: absolute; 
-}*/
-
-
 .logo {
 	margin-top: -30px;
 	position: absolute;
@@ -78,6 +31,7 @@ html, body {
 	display: flex;
 	flex-direction: column;
 	min-height: 100%;
+
 }
 
 
@@ -92,21 +46,17 @@ html, body {
 .contentVideo {
 	margin-top: 20px;
 	flex-wrap: wrap;
-	justify-content: center;
 	display: flex;
+	justify-content: center;
+
 }
 /* /Страница index*/
 
 .footer {
 	flex: 0 0 auto;
-	width: 100%;
+	min-width: 100%;
 	height: 80px;
 	background: pink;
-}
-
-.hamburger-menu {
-	display: none;
-	visibility: hidden;
 }
 
 
@@ -381,7 +331,6 @@ html, body {
 	font-size: 12px;
 	margin-left: 5px;
 	margin-top: 10px;
-
 }
 
 .videoPrice	{
@@ -629,16 +578,55 @@ html, body {
 	margin-top: 10px;
 }
 
+.textDmca h2{
+	text-align: center;
+}
 
-
-@media (max-width: 669px) {
-	.logo{
-		visibility: hidden;
+.textDmca {
+	padding: 0px 15px 25px 15px;
 }
 
 
 
-@media (max-width: 404px){
+@media (max-width: 669px) {
+	
+}
+
+
+/* Большие настольные компьютеры и ноутбуки */
+@media (min-width: 1200px) {
+
+}
+
+/* Планшеты с портретной ориентацией и рабочие столы среднего размера */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/* Портретные планшеты и небольшие настольные компьютеры */
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+/* Телефоны с горизонтальной ориентацией и планшеты с портретной ориентацией */
+@media (max-width: 767px) {
+
+}
+
+/* Горизонтальные телефоны и меньше */
+@media (max-width: 480px){
+	.logo {
+		visibility: hidden;
+	}
+
+	.content {
+		padding: 25px 0px 0px 0px;
+	}
+
+	.contentVideo {
+		padding: 25px 0px 0px 0px;
+	}
+
 	.videoStyle {
 	width: 297px;
 	height: 165px;
@@ -662,18 +650,24 @@ html, body {
 	white-space: pre;
 	text-decoration: none;
 	}
+
 	.menu li{
 		margin: 0px -7px 0px -7px; 
 	}
+
 	.autorization{
 		position: absolute;
 		display: none;
 		visibility: hidden;
 	}
+
 	.pagination a {
 		font-size: 10px;
 	}
+
 	.wrapperHead header {
+	z-index: 3;
+	position: fixed;
 	margin-top: 0%;/*Отступ background с вверху в низ*/
 	padding: 1%; /*Вертикальный размер шапки*/
 	width: 100%; /*Ширина блока меню на 100 процентов не зависимо от размера.*/

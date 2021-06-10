@@ -16,7 +16,7 @@
         <?php
 
 mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT); // Сообщает о том какая именно ошибка произошла
-$count = 20;// Количест во записей на странице
+$count = 25;// Количест во записей на странице
 $page = $_GET["page"];// Узнаём номер страницы
 $category = 'all';
 $page = (isset($_GET['page']) && $_GET['page'] > 0) ? round($_GET['page']) : 1;
@@ -42,7 +42,7 @@ foreach ($result_set as $row) {
   <span class="videoName">    
   <a href=" '.$directory.'/'.$row['video_name'].'" title="'.$row['title'].'"><strong>'.$row['title'].'</strong></a>
   </span>
-  <a href="'.$directory.'/'.$row['video_name'].'">
+  <a href="'.$directory.'/'.$row['video_name'].'" >
   <video width="100%" height="100%" src="'.$directory.'/'.$row['video_name'].'">'.$row['title'].'</video></a>  
   </div>';
   $i++; 
@@ -55,9 +55,9 @@ foreach ($result_set as $row) {
 
     <?php
   /* Входные параметры */
-  $count_pages = 5;
+  $count_pages = 3;
   $active = $page; 
-  $count_show_pages = 5;
+  $count_show_pages = 3;
   $url = "/web/index.php";
   $url_page = "/web/index.php?page=";
   if ($count_pages > 1) { // Всё это только если количество страниц больше 1
@@ -96,7 +96,6 @@ foreach ($result_set as $row) {
         </div>
       </div>
       <?php } ?>
-
         <?php include ('../templates/footer.html');?>
   </body>
 
