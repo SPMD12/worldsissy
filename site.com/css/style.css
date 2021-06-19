@@ -5,11 +5,9 @@ padding: 0;
 }
 
 
-.logo {
-	margin-top: -30px;
+.logoWrapper {
 	position: absolute;
-	color: #c400ff;
-	font-weight: 900;
+	margin-top: -65px;
 }
 
 
@@ -20,7 +18,7 @@ html, body {
 
 /* Создает розовый блок для меню */
 .wrapperHead header {
-	margin-top: 30px;/*Отступ background с вверху в низ*/
+	margin-top: 70px;/*Отступ background с вверху в низ*/
 	width: 100%; /*Ширина блока меню на 100 процентов не зависимо от размера.*/
 	background: pink; /*Цвет объекта*/
 
@@ -93,29 +91,19 @@ html, body {
 /* /Меню */
 
 
-/* Ссылки под меню */
-.submenu {
-	list-style: none; /*list-style: none; - Убирает нумирацию*/
-	position: absolute; /*position: absolute; - Устанавливает способ позиционирования элемента относительно окна браузера или других объектов на веб-странице*/
-	background-color: pink; /*background-color: pink; - текст с зади розовый*/
-	min-width: 100px; /*min-width: - Устанавливает минимальную ширину элемента.*/
-	display: none; /*display: none; - Временно удаляет элемент из документа.*/
-}
-
-.submenu li{
-	padding: 4px;
-}
-/* /Ссылки под меню */
-
-
 /*Регистрация кнопки*/
+.signup {
+	margin-top: -50px;
+	margin-left: 81%;
+	position: absolute;
+} 
+
 .register ul{
+	display: flex;
 	font-size: 13px;
 	list-style: none;
 	text-transform: uppercase;
 }
-
-
 
 .register li a {
 	color: black;
@@ -137,42 +125,66 @@ html, body {
 
 
 /* Авторизация */
-.authorized ul{
-	font-size: 13px;
-	list-style: none;
+.profileWrap {
+	margin-top: -50px;
+	margin-left: 87%;
+	position: absolute;
+	justify-content: center;
+}
+
+
+.profile-icon i{
+	font-size: 25px;
+	color: black;
+}
+
+.sub-profile {
+	text-align: right;
+}
+
+.sub-profile a {
+	text-decoration: none;
+	color: black;
 	text-transform: uppercase;
-	display: flex; /* Переносит надпись авторизирован в строку */
+	font-size: 12px;
 }
 
-.authorized li a{
-	padding: 6px;
-	margin: 7px;
-	text-decoration: none; /*Убирает подчеркивание ссылки*/
+.profileWrap ul {
+	margin: 0;
+	list-style: none;
+	display: none;
+	
 }
 
-/*:hover - Определяет стиль элемента при наведении на него курсора мыши*/
-.authorized li a:hover {
-	background: grey; /* При наведении серый цвет */
-	-moz-transition: all 0.3s 0.01s ease; /*делаем плавный переход*/
-	-o-transition: all 0.3s 0.01s ease;
-	-webkit-transition: all 0.3s 0.01s ease;
+.profileWrap .profile-icon {
+	font-size: 18px;
+	cursor: pointer;
 }
+
+.profileWrap .profile-icon::before {
+	position: absolute;
+	content: '▼';
+	font-size: 80%;
+	color: black;
+	margin-left: 25px;
+	margin-top: 4px;
+}
+
+.profileWrap.open .profile-icon::before {
+	content: '▲';
+	position: absolute;
+}
+
+.profileWrap.open ul {
+	background: #00FFFF	;
+	padding: 5px 5px 5px 15px;
+	display: block;
+	margin-left: -62px;
+}
+
 /* /Авторизация */
 
 
-/*Кнопки входа и выхода общее*/
-.autorization {
-	margin-top: 20px;
-	text-align: right;
-}
-.autorization ul{
-	display: block;
-}
-.autorization li{
-	display: inline; /* Отображать как строчный элемент */
-}
-
-/*/Кнопки входа и выхода общее*/
 
 /* Страница products */
 
@@ -584,92 +596,4 @@ html, body {
 
 .textDmca {
 	padding: 0px 15px 25px 15px;
-}
-
-
-
-@media (max-width: 669px) {
-	
-}
-
-
-/* Большие настольные компьютеры и ноутбуки */
-@media (min-width: 1200px) {
-
-}
-
-/* Планшеты с портретной ориентацией и рабочие столы среднего размера */
-@media (min-width: 992px) and (max-width: 1199px) {
-
-}
-
-/* Портретные планшеты и небольшие настольные компьютеры */
-@media (min-width: 768px) and (max-width: 991px) {
-
-}
-
-/* Телефоны с горизонтальной ориентацией и планшеты с портретной ориентацией */
-@media (max-width: 767px) {
-
-}
-
-/* Горизонтальные телефоны и меньше */
-@media (max-width: 480px){
-	.logo {
-		visibility: hidden;
-	}
-
-	.content {
-		padding: 25px 0px 0px 0px;
-	}
-
-	.contentVideo {
-		padding: 25px 0px 0px 0px;
-	}
-
-	.videoStyle {
-	width: 297px;
-	height: 165px;
-	display: inline-block;
-	border: 1px solid black;
-	background-color: black;
-	overflow: hidden;
-	margin: 0px 10px 40px 10px;
-	z-index: 1;
-	}
-
-	.videoName a {
-	z-index: 1;
-	width: 300px; /*Что бы название не вылезало за края*/
-	position: absolute;
-	margin-top: 165px;
-	font-size: 12px;
-	overflow: hidden;
-	text-overflow: ellipsis;
-	color: black;
-	white-space: pre;
-	text-decoration: none;
-	}
-
-	.menu li{
-		margin: 0px -7px 0px -7px; 
-	}
-
-	.autorization{
-		position: absolute;
-		display: none;
-		visibility: hidden;
-	}
-
-	.pagination a {
-		font-size: 10px;
-	}
-
-	.wrapperHead header {
-	z-index: 3;
-	position: fixed;
-	margin-top: 0%;/*Отступ background с вверху в низ*/
-	padding: 1%; /*Вертикальный размер шапки*/
-	width: 100%; /*Ширина блока меню на 100 процентов не зависимо от размера.*/
-}
 }

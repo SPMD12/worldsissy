@@ -63,7 +63,7 @@
         <div class="formTableReg">
           <p>
             <!-- Форма логина -->
-            <input type="text" name="login" value="<?php echo @$data['login'];?>" placeholder="Введите логин">
+            <input type="text" name="login" value="<?php echo @$data['login'];?>" placeholder="Введите имя пользователя">
             <br>
             <!-- Форма Email -->
             <input type="email" name="email" value="<?php echo @$data['email'];?>" placeholder="Введите е-mail">
@@ -77,8 +77,7 @@
 
           <div class="regFormBut">
             <!-- Кнопка регистрации -->
-            <button type="submit" name="do_signup"> Зарегистрироваться
-            </button>
+            <button type="submit" name="do_signup">Зарегистрироваться</button>
           </div>
         </div>
       </form>

@@ -4,39 +4,42 @@
     <head>
       <!--Подключение стилей css-->
       <link rel="stylesheet" href="../css/style.css">
+      <link rel="stylesheet" href="../css/media.css">
+      <link rel="stylesheet" href="../css/font-awesome.css">
       <link rel="shortcut icon" type="image/x-icon" href="../img/icon.png" />
       <meta name="viewport" content="width=device-width">
     </head>
 
-    <body>
-      <!--Если пользователь авторизирован выводиться "Авторизован!"-->
-      <div class="autorization">
-        <?php if (isset($_SESSION['logged_user'])) : ?>
-          <div class="authorized">
-            <ul>
-              <li>Вы вошли!<a href="../web/logout.php">Выйти</a></li>
+ <body>
+<!--Если пользователь авторизирован выводиться "Авторизован!"-->
+      <?php if (isset($_SESSION['logged_user'])) : ?>
+        <div id="profile-wrap" class="profileWrap">
+          <span class="profile-icon"><a href="" onclick="return false;"><i class="fa fa-user-circle" aria-hidden="true"></i></a></span>
+            <ul class="sub-profile">
+              <li><a href="">Мои товары</a></li>
+              <li><a href="../web/logout.php">Выйти</a></li>
             </ul>
+        </div>
+      <?php endif; ?>
+<!--Если пользователь не авторизирован будут ссылки на регистрацию-->
+      <?php if (!isset($_SESSION['logged_user'])) : ?>
+      <div class="signup">
+          <div class="register">
+              <ul>
+                <li><a id="signup_nav" href="../web/signup.php">Регистрация</a></li>
+                <li><a id="logout_nav" href="../web/login.php">Вход</a></li>
+              </ul> 
           </div>
-          <?php endif; ?>
-            <!--Если пользователь не авторизирован будут ссылки на регистрацию-->
-            <?php if (!isset($_SESSION['logged_user'])) : ?>
-              <div class="register">
-                <div>
-                  <ul>
-                    <li><a id="signup_nav" href="../web/signup.php">Регистрация</a></li>
-                    <li><a id="logout_nav" href="../web/login.php">Вход</a></li>
-                  </ul>
-                </div>
-              </div>
-              <?php endif; ?>
       </div>
+      <?php endif; ?>
 
       <div class="logoWrapper">
         <a href="http://www.worldsissy.com"><img src="../img/Logo.png" width="120" class="logo"></a>
       </div>
+
+<!--Меню сайта-->
       <div class="wrapperHead">
         <header class="header">
-          <!--Меню сайта-->
           <nav>
             <ul class="menu">
               <li><a href="../web/index.php">Главная</a></li>

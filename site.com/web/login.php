@@ -38,21 +38,19 @@
  	}
 ?>
     </div>
-    <!--Подключение стилей css-->
-    <link rel="stylesheet" href="../css/style.css">
+
     <div class="formAutoWrapper">
       <form action="login.php" method="POST">
         <!-- Форма авторизации -->
         <div class="formTable">
           <p>
-            <input type="text" name="login" value="<?php echo @$data['login'];?>" placeholder="Введите логин">
+            <input type="text" name="login" value="<?php echo @$data['login'];?>" placeholder="Имя пользователя">
             <br>
             <input type="password" name="password_log" value="<?php echo @$data['password'];?>" placeholder="Введите пароль">
           </p>
+          
           <div class="formButton">
-
-            <button type="submit" name="do_login">Войти
-            </button>
+            <button type="submit" name="do_login">Войти</button>
           </div>
       </form>
       </div>
