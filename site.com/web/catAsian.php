@@ -37,10 +37,9 @@ foreach ($result_set as $row) {
   echo 
   '<div class="videoStyle">
   <span class="videoName">    
-  <a href=" '.$directory.'/'.$row['video_name'].'" title="'.$row['title'].'"><strong>'.$row['title'].'</strong></a>
-  </span>
-  <a href="'.$directory.'/'.$row['video_name'].'">
-  <video width="100%" height="100%" src="'.$directory.'/'.$row['video_name'].'">'.$row['title'].'</video></a>   
+  <span class="videoName">    
+  <a href=" '.$directory.'/'.$row['video_name'].'""><video method="GET" onclick="openWatchVideo()" id="video-player" data-playerVideo = "'.$row['id'].'" width="100%" height="100%" src="'.$directory.'/'.$row['video_name'].'">'.$row['title'].'</video><br><span>'.$row['title'].'</span></a>
+  </span>    
   </div>';
   $i++; 
   }

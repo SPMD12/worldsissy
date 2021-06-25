@@ -1,4 +1,4 @@
-
+<?php include ('../templates/header.html');?>
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -7,7 +7,6 @@
 	<title>Document</title>
 </head>
 <body>
-	
+	<script src="../js/countVideoUI.js"></script>
 </body>
-<script src="../js/countVideoUI.js"></script>
 </html>
