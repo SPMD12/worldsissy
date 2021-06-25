@@ -77,7 +77,7 @@
 
           <div class="regFormBut">
             <!-- Кнопка регистрации -->
-            <button type="submit" name="do_signup">Зарегистрироваться</button>
+            <button type="submit" name="do_signup">арегистрироваться</button>
           </div>
         </div>
       </form>

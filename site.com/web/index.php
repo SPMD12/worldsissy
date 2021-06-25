@@ -43,7 +43,7 @@ foreach ($result_set as $row) {
   <a href=" '.$directory.'/'.$row['video_name'].'" title="'.$row['title'].'"><strong>'.$row['title'].'</strong></a>
   </span>
   <a href="'.$directory.'/'.$row['video_name'].'" >
-  <video width="100%" height="100%" src="'.$directory.'/'.$row['video_name'].'">'.$row['title'].'</video></a>  
+  <video method="GET" id="video-player" data-playerVideo="$row["id"]" width="100%" height="100%" src="'.$directory.'/'.$row['video_name'].'">'.$row['title'].'</video></a>  
   </div>';
   $i++; 
   }
