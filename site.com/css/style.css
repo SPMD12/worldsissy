@@ -29,7 +29,6 @@ html, body {
 	display: flex;
 	flex-direction: column;
 	min-height: 100%;
-
 }
 
 
@@ -129,9 +128,9 @@ html, body {
 .profileWrap {
 	top: 25px;;
 	position: absolute;
-	left: 92%;
-	justify-content: center;
-	z-index: 3;
+	text-align: right;
+	right: 25px;
+	display: block;
 }
 
 
@@ -151,6 +150,7 @@ html, body {
 }
 
 .sub-profile li a {
+	white-space: nowrap;
 	text-decoration: none;
 	color: black;
 	text-transform: uppercase;
@@ -189,31 +189,29 @@ html, body {
 
 .profileWrap.open ul {
 	background: #e8e8e8;
+	position: absolute;
 	display: block;
 	margin-top: 5px;
-	margin-left: -22px;
+	margin-left: -82px;
 	z-index: 2;
 }
 
 .profileWrap.open ul li{
 	padding: 8px;
+	width: 120px;
 	color: #000; 
   	border-bottom: 1px solid black;
 }
 
 .profileWrap.open ul li:hover {
 	padding: 8px;
+	
 	background-color: pink;
 }
 
 
 /* /Авторизация */
 
-
-.video {
-	position: absolute;
-	width: 200px;
-}
 
 /* Страница products */
 
@@ -226,7 +224,7 @@ html, body {
 
 
 .card { 
-	background-color: pink;
+	background-color: #F137A6;
 	margin: 0px 10px 70px 10px;
 	border: 1px solid;
 	width: 200px;
@@ -251,7 +249,8 @@ html, body {
 	text-align: center;
 	margin-top: 5px;
 	overflow: hidden;
-	font-size: 15px;
+	font-size: 12px;
+	text-transform: uppercase;
 	padding: 10px;
 }
 
@@ -274,7 +273,8 @@ html, body {
 	color: #F137A6;
 }
 .glow-button strong {
-	font-size: 17px;
+	font-size: 12px;
+	text-transform: uppercase;
 }
 
 .cardUrl a{
@@ -418,6 +418,58 @@ html, body {
 
 /* /Страница hypno-video */
 
+
+/* Страница hypno-caption */
+
+.cardCaption {
+	width: 270px;
+	height: 350px;
+	border: 1px solid;
+	background: pink;
+	margin-left: 10px;
+	margin-bottom: 50px;
+}
+
+.cardCaption button{
+	
+	width: 269px;
+	margin-top: 25px;
+	border: 1px solid;
+	padding: 5px;
+}
+
+.captionImg {
+	padding: 10px;
+	
+}
+
+.captionImg img{
+	border: 1px solid;
+}
+
+.captionName {
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.captionDescription {
+	margin-top: 20px;
+}
+
+.captionDescription li{
+	list-style: none;
+	margin-left: 10px;
+
+}
+
+.captionPrice {
+	margin-top: 20px;
+	text-align: center;
+	font-weight: bold;
+}
+
+/* /Страница hypno-caption */
+
 /* Страница login */
 .formAutoWrapper {
 	border-radius: 10px;
@@ -529,6 +581,10 @@ html, body {
 	margin: 0px 5px 30px 5px;
 }
 
+.imgSize a:hover {
+	background-color: hotpink;
+}
+
 .imgSize img {
 	position: relative;
     width: 100%;
@@ -564,7 +620,7 @@ html, body {
 	text-decoration: none;
 }
 
-.videoName span {
+.videoName h1 {
 	z-index: 1;
 	width: 170px; /*Что бы название не вылезало за края*/
 	font-size: 12px;

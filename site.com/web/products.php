@@ -11,30 +11,48 @@
   <body>
     <div class="wrapper">
       <div class="content">
+
         <div class="cardWrapper">
-          <div class="card">
-            <div class="cardImg">
-              <img src="../img/journal2.gif" style="width: 100%; height: 100%; border-radius: 20%;" ">
+
+
+					<!-- Следующая карточка -->
+				<div class="card ">
+					<div class="cardImg">
+						<img src="../img/journal2.gif " style="width: 100%; height: 100%; border-radius: 20%; ">
 					</div>
-					<div class="cardText ">
-						<p>Здесь можно купить журналы которые отвечают на многие ваши вопросы</p>
+					<div class="cardText">
+						<p>Здесь можно купить журналы которые отвечают на многие ваши вопросы.</p>
 					</div>
 					<div class="cardUrl ">
-						<a href="./journal.php " class="glow-button "><strong>Журналы</strong></a>
+						<a href="./journal.php" class="glow-button "><strong>Журналы</strong></a>
 					</div>
 				</div>
+
 				<!-- Следующая карточка -->
 				<div class="card ">
 					<div class="cardImg ">
 						<img src="../img/134011522.gif " style="width: 100%; height: 100%; border-radius: 20%; ">
 					</div>
-					<div class="cardText ">
-						<p>Здесь можно купить приватные HYPNO-ВИДЕО которых нету в общем доступе</p>
+					<div class="cardText">
+						<p>Здесь можно купить приватные HYPNO-ВИДЕО которых нету в общем доступе.</p>
 					</div>
 					<div class="cardUrl ">
 						<a href="./hypno-video.php " class="glow-button "><strong>Hypno видео</strong></a>
 					</div>
 				</div>
+
+				<div class="card ">
+					<div class="cardImg ">
+						<img src="../img/399_1000.gif" style="width: 100%; height: 100%; border-radius: 20%; ">
+					</div>
+					<div class="cardText ">
+						<p>Здесь можно купить приватные HYPNO картинки или GIF.</p>
+					</div>
+					<div class="cardUrl ">
+						<a href="./hypno-caption.php" class="glow-button"><strong>Hypno Caption</strong></a>
+					</div>
+				</div>
+
 			</div>		
 		</div>
 	</div>

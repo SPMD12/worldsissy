@@ -12,18 +12,18 @@
   <body>
     <div class="wrapper">
       <div class="content">
+
         <div class="productsJournal">
-          <img src="../img/journal1.jpg" style="width:100%">
+          <img src="../img/journal5.jpg">
           <div class="productsJournalText">
-            <h2>Журнал №1</h2>
+            <h2>Журнал №5</h2>
             <h4>темы в номере:</h4>
             <div class="numeration">
-              <p>- Безопасен ли анальный секс</p>
-              <p>- Анальный секс для новичков</p>
-              <p>- Как получить анальный оргазм</p>
-              <p>- Чем полезна сперма</p>
+              <p>- Типы фигур</p>
+              <p>- Как быть женственной</p>
+              <p>- Учимся ходить на каблуках</p>
             </div>
-            <div class="price"><strong>Цена: 200р</strong></div>
+            <div class="price"><strong> Цена: 250р </strong></div>
             <div class="videoBtn">
               <a href="https://t.me/Allsissybot" target="_blank">
                 <button>Купить</button>
@@ -31,17 +31,18 @@
             </div>
           </div>
         </div>
+
         <div class="productsJournal">
-          <img src="../img/journal2.gif">
+          <img src="../img/journal4.jpg">
           <div class="productsJournalText">
-            <h2>Журнал №2</h2>
+            <h2>Журнал №4</h2>
             <h4>темы в номере:</h4>
             <div class="numeration">
-              <p>- Как стать SISSY</p>
-              <p>- Как выбрать пояс верности</p>
-              <p>- Как влияют HYPNO ВИДЕО</p>
+              <p>- Формирование женской попки</p>
+              <p>- Лучшие позы для анального секса</p>
+              <p>- GangBang плюсы и минусы</p>
             </div>
-            <div class="price"><strong>Цена: 250р</strong></div>
+            <div class="price"><strong> Цена: 250р </strong></div>
             <div class="videoBtn">
               <a href="https://t.me/Allsissybot" target="_blank">
                 <button>Купить</button>
@@ -68,6 +69,46 @@
             </div>
           </div>
         </div>
+
+        <div class="productsJournal">
+          <img src="../img/journal2.gif">
+          <div class="productsJournalText">
+            <h2>Журнал №2</h2>
+            <h4>темы в номере:</h4>
+            <div class="numeration">
+              <p>- Как стать SISSY</p>
+              <p>- Как выбрать пояс верности</p>
+              <p>- Как влияют HYPNO ВИДЕО</p>
+            </div>
+            <div class="price"><strong>Цена: 250р</strong></div>
+            <div class="videoBtn">
+              <a href="https://t.me/Allsissybot" target="_blank">
+                <button>Купить</button>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="productsJournal">
+          <img src="../img/journal1.jpg" style="width:100%">
+          <div class="productsJournalText">
+            <h2>Журнал №1</h2>
+            <h4>темы в номере:</h4>
+            <div class="numeration">
+              <p>- Безопасен ли анальный секс</p>
+              <p>- Анальный секс для новичков</p>
+              <p>- Как получить анальный оргазм</p>
+              <p>- Чем полезна сперма</p>
+            </div>
+            <div class="price"><strong>Цена: 200р</strong></div>
+            <div class="videoBtn">
+              <a href="https://t.me/Allsissybot" target="_blank">
+                <button>Купить</button>
+              </a>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
     </div>

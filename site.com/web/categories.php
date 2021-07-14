@@ -16,7 +16,7 @@
           <div class="imgSize">
             <a href="./catHypno.php">
               <p><img src="../img/hypnoCat.gif" style="width:100%; height: 100%;"></p>
-            </a><a href="./catHypno.php"><strong>Hypno видео</strong></a>
+            <strong>Hypno видео</strong></a>
           </div>
           <div class="imgSize">
             <a href="./catBigDick.php">

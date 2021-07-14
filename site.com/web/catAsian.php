@@ -35,10 +35,9 @@ $title = htmlspecialchars($title);
 
 foreach ($result_set as $row) {
   echo 
-  '<div class="videoStyle">
+  '<div class="videoStyle">   
   <span class="videoName">    
-  <span class="videoName">    
-  <a href=" '.$directory.'/'.$row['video_name'].'""><video method="GET" onclick="openWatchVideo()" id="video-player" data-playerVideo = "'.$row['id'].'" width="100%" height="100%" src="'.$directory.'/'.$row['video_name'].'">'.$row['title'].'</video><br><span>'.$row['title'].'</span></a>
+  <a href=" '.$directory.'/'.$row['video_name'].'""><video method="GET" onclick="openWatchVideo()" id="video-player" data-playerVideo = "'.$row['id'].'" width="100%" height="100%" src="'.$directory.'/'.$row['video_name'].'">'.$row['title'].'</video><br><h1>'.$row['title'].'</h1></a>
   </span>    
   </div>';
   $i++; 
